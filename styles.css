@@ -1,9 +1,8 @@
 :root {
-  --gray-00: #ffffff;
   --gray-05: #f5f6f7;
   --gray-15: #d0d0d5;
   --gray-75: #3b3b4f;
-  --gray-85: #b0b0f8;
+  --gray-95: #4c8afe;
   --gray-90: #0a0a23;
   --blue-50: #198eee;
   --error: #a94442;
@@ -22,7 +21,7 @@
 body {
   font-family: "Lato", Helvetica, Arial, sans-serif;
   font-size: 18px;
-  background-color: var(--gray-85);
+  background-color: var(--gray-95);
   color: var(--gray-05);
 }
 
@@ -94,7 +93,9 @@ select:focus-visible,
 button:focus-visible {
   outline: 3px solid var(--blue-50);
 }
-
+#sort{
+  color:var(--gray-05) ;
+}
 .output-container {
   width: 95%;
   min-height: 55px;
