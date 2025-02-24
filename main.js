@@ -30,6 +30,11 @@ const updateUI = (array = []) => {
 }
 
 //Bubble Sort
+/**
+Bubble sort, bir sıralama algoritmasıdır ve verileri sıralamak için kullanılır. 
+Algoritma, sıradaki elemanları karşılaştırarak ve gerekirse yer değiştirerek çalışır. 
+En büyük veya en küçük elemanı sıralanmış listenin sonuna iteratif olarak "baloncuk" gibi çıkararak sıralama işlemini gerçekleştirir. 
+ */
 const bubbleSort = (array) => {
   for (let i = 0; i < array.length; i++) {
     for (let j = 0; j < array.length - 1; j++) {
@@ -60,6 +65,7 @@ const selectionSort = (array) => {
   }
   return array
 }
+
 //Insertion Sort = Insertion sort algoritması, dizideki elemanları sıralamak için kullanılan basit bir sıralama algoritmasıdır. 
 //Çalışma prensibi, diziyi parça parça sıralamak ve her yeni elemanı doğru pozisyona yerleştirmektir.
 //Insertion sort'un zaman karmaşıklığı en kötü durumda O(n^2) iken, en iyi durumda O(n) ve ortalama durumda O(n^2) olarak kabul edilir.
