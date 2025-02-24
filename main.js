@@ -50,6 +50,18 @@ const bubbleSort = (array) => {
 }
 
 //Selection Sort
+/* 
+Selection sort, bir sıralama algoritmasıdır. 
+Bu algoritma, dizideki en küçük (veya en büyük) öğeyi bulur ve bu öğeyi dizinin başındaki (veya sonundaki) öğe ile takas eder. 
+Bu işlem, tüm dizi sıralanana kadar tekrarlanır.
+
+Algoritmanın adımları şunlardır:
+
+Dizinin başlangıcında en küçük öğeyi bul.
+Bu en küçük öğeyi dizinin ilk öğesi ile takas et.
+Dizinin geri kalan kısmı için aynı adımları tekrara et.
+Dizi tamamen sıralanana kadar bu işlemi devam ettir.
+*/
 const selectionSort = (array) => {
   for (let i = 0; i < array.length; i++) {
     let minIndex = i;
