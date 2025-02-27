@@ -22,6 +22,7 @@ const sortedValues = inputValues.sort((a, b) => {
   return a-b
 });
 
+
 const updateUI = (array = []) => {
   array.forEach((num, i) => {
     const outputValueNode = document.getElementById(`output-value-${i}`);
@@ -29,8 +30,8 @@ const updateUI = (array = []) => {
   })
 }
 
-//Bubble Sort
 /**
+Bubble Sort
 Bubble sort, bir sıralama algoritmasıdır ve verileri sıralamak için kullanılır. 
 Algoritma, sıradaki elemanları karşılaştırarak ve gerekirse yer değiştirerek çalışır. 
 En büyük veya en küçük elemanı sıralanmış listenin sonuna iteratif olarak "baloncuk" gibi çıkararak sıralama işlemini gerçekleştirir. 
