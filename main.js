@@ -3,6 +3,7 @@ const sortButton = document.getElementById("sort");
 const sortInputArray = (event) => {
   event.preventDefault();
 
+  /*Bu kod, HTML sayfasında "values-dropdown" sınıfına sahip olan tüm öğeleri seçer ve bunların değerlerini alarak bir diziye dönüştürür.*/
   const inputValues = [
     ...document.getElementsByClassName("values-dropdown")
   ].map((dropdown) => Number(dropdown.value));
@@ -21,7 +22,6 @@ Bu nedenle, bu yöntem sayısal verilerin doğru bir şekilde sıralanması içi
 const sortedValues = inputValues.sort((a, b) => {
   return a-b
 });
-
 
 const updateUI = (array = []) => {
   array.forEach((num, i) => {
