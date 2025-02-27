@@ -23,6 +23,10 @@ const sortedValues = inputValues.sort((a, b) => {
   return a-b
 });
 
+/*
+Bu JavaScript fonksiyonu, bir dizi alır (varsayılan olarak boş bir dizi) ve dizideki her bir öğeyi, belirtilen bir HTML öğesine yerleştirir. 
+Diziyi döngü ile iterken, her öğenin değeri, output-value-i şeklindeki bir HTML öğesinin innerText özelliğine atanır.
+*/
 const updateUI = (array = []) => {
   array.forEach((num, i) => {
     const outputValueNode = document.getElementById(`output-value-${i}`);
@@ -30,8 +34,9 @@ const updateUI = (array = []) => {
   })
 }
 
-/**
+/*
 Bubble Sort
+
 Bubble sort, bir sıralama algoritmasıdır ve verileri sıralamak için kullanılır. 
 Algoritma, sıradaki elemanları karşılaştırarak ve gerekirse yer değiştirerek çalışır. 
 En büyük veya en küçük elemanı sıralanmış listenin sonuna iteratif olarak "baloncuk" gibi çıkararak sıralama işlemini gerçekleştirir. 
@@ -79,9 +84,12 @@ const selectionSort = (array) => {
   return array
 }
 
-//Insertion Sort = Insertion sort algoritması, dizideki elemanları sıralamak için kullanılan basit bir sıralama algoritmasıdır. 
-//Çalışma prensibi, diziyi parça parça sıralamak ve her yeni elemanı doğru pozisyona yerleştirmektir.
-//Insertion sort'un zaman karmaşıklığı en kötü durumda O(n^2) iken, en iyi durumda O(n) ve ortalama durumda O(n^2) olarak kabul edilir.
+//Insertion Sort 
+/*
+Insertion sort algoritması, dizideki elemanları sıralamak için kullanılan basit bir sıralama algoritmasıdır. 
+Çalışma prensibi, diziyi parça parça sıralamak ve her yeni elemanı doğru pozisyona yerleştirmektir.
+Insertion sort'un zaman karmaşıklığı en kötü durumda O(n^2) iken, en iyi durumda O(n) ve ortalama durumda O(n^2) olarak kabul edilir. 
+*/
 const insertionSort = (array) => {
   for (let i = 1; i < array.length; i++) {
     const currValue = array[i];
