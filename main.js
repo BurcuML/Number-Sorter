@@ -23,6 +23,7 @@ const sortedValues = inputValues.sort((a, b) => {
   return a-b
 });
 
+
 /*
 Bu JavaScript fonksiyonu, bir dizi alır (varsayılan olarak boş bir dizi) ve dizideki her bir öğeyi, belirtilen bir HTML öğesine yerleştirir. 
 Diziyi döngü ile iterken, her öğenin değeri, output-value-i şeklindeki bir HTML öğesinin innerText özelliğine atanır.
@@ -70,7 +71,9 @@ Dizi tamamen sıralanana kadar bu işlemi devam ettir.
 */
 const selectionSort = (array) => {
   for (let i = 0; i < array.length; i++) {
-    let minIndex = i;
+    let minIndex = i; // bu kodu genellikle dizideki en küçük elemanı bulmaya çalışrken kullanırız. 
+                     //Aramaya başladığımızdaki elemanın indeksi (i) minIndex olarak atanır. 
+                    //Daha sonra, dizideki diğer elemanlarla karşılaştırmalar yapılarak daha küçük bir eleman bulunursa minIndex güncellenir. Bu şekilde, döngü tamamlandığında en küçük elemanın indeksi elde edilmiş olur.
 
     for (let j = i + 1; j < array.length; j++) {
       if (array[j] < array[minIndex]) {
